@@ -412,6 +412,36 @@ animation-duration: 0.5s;
 .details{
     width: 45%;
 }
+
+
+@media (max-width:600px){
+    .about .container .about-content .img::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 79px;
+    width: 420px;
+    height: 420px;
+    clip-path: ellipse();
+    background-color: orange;
+    animation: change-color 10s linear infinite alternate;
+    -webkit-animation: change-color 10s linear infinite alternate;
+    z-index: -1;
+}
+@media (max-width:500px){
+    .about .container .about-content .img::after {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    width: 320px;
+    height: 320px;
+    clip-path: ellipse();
+    background-color: orange;
+    animation: change-color 10s linear infinite alternate;
+    -webkit-animation: change-color 10s linear infinite alternate;
+    z-index: -1;
+}
 @media (min-width:992px ) and (max-width:1199px){
     .about .container .about-content {
         padding-right:0px ;
